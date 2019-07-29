@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_canada"
+        android:icon="@drawable/ic_221_canada"
+        android:title="@string/canada" />
+
+    <item
+        android:id="@+id/navigation_usa"
+        android:icon="@drawable/ic_011_united_states"
+        android:title="@string/estados_unidos" />
+
+    <item
+        android:id="@+id/navigation_europa"
+        android:icon="@drawable/ic_186_european_union"
+        android:title="@string/txt_europa" />
+
+    <item
+        android:id="@+id/navigation_marcas_privadas"
+        android:icon="@drawable/ic_local_parking_black_24dp"
+        android:title="@string/marcas_privadas" />
+
+</menu>
