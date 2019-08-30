@@ -22,12 +22,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory"
-        android:fullBackupContent="@xml/backup_descriptor">
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:configChanges="orientation|keyboardHidden|screenSize">
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
         <activity
+
             android:name=".SplashScreen"
             android:label="@string/app_name"
             android:theme="@style/fullscreen">
@@ -40,7 +42,8 @@
 
         <activity
             android:name="com.facebook.CustomTabActivity"
-            android:exported="true">
+            android:exported="true"
+            android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -63,7 +66,8 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize"
+            />
         <activity
             android:name=".EstructuraScrollingActivity"
             android:parentActivityName=".MainActivity"
